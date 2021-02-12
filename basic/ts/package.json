@@ -10,8 +10,7 @@
     "/dist"
   ],
   "scripts": {
-    "compile": "tsc -p .",
-    "build": "npm run compile && pkg ./dist/index.js  --target=node14-linux-x64 -o ./dist/app"
+    "build": "tsc -p ."
   },
   "author": "",
   "license": "ISC",

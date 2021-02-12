@@ -1,0 +1,4 @@
+.nvimlog
+node_modules
+go.sum
+

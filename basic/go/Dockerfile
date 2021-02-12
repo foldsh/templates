@@ -7,10 +7,10 @@ RUN go mod download
 
 # Build the binary
 COPY . ./
-RUN GOOS=linux CGO_ENABLED=0 go build -o app .
+RUN GOOS=linux CGO_ENABLED=0 go build -o ./bin/app .
 
-FROM foldsh/foldrt:0.0.1
+FROM foldsh/foldrt:v0.0.3
 WORKDIR /fold
-COPY --from=builder /fold/app ./
+COPY --from=builder /fold/bin/app ./bin/app
 EXPOSE 8080
-CMD ["./app"]
+CMD ["./bin/app"]
