@@ -7,12 +7,12 @@ You can access them via the fold command line tool, `foldctl`, with the
 following command:
 
 ```
-foldctl service new <type> <language>
+foldctl new <type> <language> <service-name>
 ```
 
-For example, to use the 'basic' template with typescript as the language, you
-would run the command:
+For example, to create a service called `hello-world' using the `basic` 
+template with TypeScript as the language, you would run the command:
 
 ```
-foldctl service new basic ts
+foldctl new basic ts hello-world
 ```
