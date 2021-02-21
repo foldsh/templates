@@ -1,6 +1,6 @@
 const fold = require("@foldsh/sdk");
 
-var service = new fold.Service("hello-world");
+var service = new fold.Service();
 
 service.get("/hello/:name", (req, res) => {
   res.statusCode = 200;

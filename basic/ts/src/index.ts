@@ -1,6 +1,6 @@
 import { Service, Request, Response } from "@foldsh/sdk";
 
-const service: Service = new Service("hello-world");
+const service: Service = new Service();
 
 service.get("/hello/:name", (req: Request, res: Response) => {
   res.statusCode = 200;

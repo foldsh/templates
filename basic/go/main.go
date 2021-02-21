@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	svc := fold.NewService("hello")
+	svc := fold.NewService()
 	svc.Get("/hello/:name", func(req *fold.Request, res *fold.Response) {
 		res.StatusCode = 200
 		res.Body = map[string]interface{}{
