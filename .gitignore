@@ -1,4 +1,4 @@
 .nvimlog
 node_modules
 go.sum
-
+package-lock.json
