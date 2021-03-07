@@ -2,11 +2,11 @@
   "name": "fold-template",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "source": true,
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@foldsh/sdk": "0.0.7"
+    "@foldsh/sdk": "0.1.2-beta.0"
   }
 }

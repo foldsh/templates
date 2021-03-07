@@ -1,12 +1,12 @@
-const fold = require("@foldsh/sdk");
+const { fold } = require("@foldsh/sdk");
 
-var service = new fold.Service();
+const svc = fold();
 
-service.get("/hello/:name", (req, res) => {
-  res.statusCode = 200;
-  res.body = {
-    greeting: `Hello, ${req.pathParams.name}`,
-  };
+svc.get("/hello/:name", (req, res) => {
+  res.status(200);
+  res.json({
+    greeting: `Hello, ${req.params.name}`,
+  });
 });
 
-service.start();
+svc.start();

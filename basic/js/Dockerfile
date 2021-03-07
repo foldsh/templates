@@ -1,4 +1,4 @@
-FROM foldsh/foldrt:v0.0.3-node
+FROM foldsh/foldrt:v0.1.2-beta.1-node
 WORKDIR /fold
 
 # Download dependencies
@@ -6,5 +6,5 @@ COPY package*.json ./
 RUN npm install 
 
 COPY . .
-EXPOSE 8080
+EXPOSE 6123
 CMD ["node", "src/index.js"]

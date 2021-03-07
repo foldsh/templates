@@ -2,9 +2,8 @@
   "name": "fold-template",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
-  "source": true,
   "main": "./dist/index.js",
+  "source": true,
   "types": "./dist/index.d.ts",
   "files": [
     "/dist"
@@ -15,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@foldsh/sdk": "0.0.7"
+    "@foldsh/sdk": "0.1.2-beta.0"
   },
   "devDependencies": {
     "pkg": "^4.4.9",

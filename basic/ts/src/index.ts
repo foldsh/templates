@@ -1,12 +1,12 @@
-import { Service, Request, Response } from "@foldsh/sdk";
+import fold, { Service, Request, Response } from "@foldsh/sdk";
 
-const service: Service = new Service();
+const svc: Service = fold();
 
-service.get("/hello/:name", (req: Request, res: Response) => {
-  res.statusCode = 200;
-  res.body = {
-    greeting: `Hello, ${req.pathParams.name}`,
-  };
+svc.get("/hello/:name", (req: Request, res: Response) => {
+  res.status(200);
+  res.json({
+    greeting: `Hello, ${req.params.name}`,
+  });
 });
 
-service.start();
+svc.start();

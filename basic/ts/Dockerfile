@@ -9,9 +9,9 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-FROM foldsh/foldrt:v0.0.3-node
+FROM foldsh/foldrt:v0.1.2-beta.1-node
 WORKDIR /fold
 COPY --from=builder /fold/node_modules ./node_modules
 COPY --from=builder /fold/dist ./dist
-EXPOSE 8080
+EXPOSE 6123
 CMD ["node", "dist/index.js"]
