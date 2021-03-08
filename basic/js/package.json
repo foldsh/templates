@@ -7,6 +7,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@foldsh/sdk": "0.1.2-beta.0"
+    "@foldsh/sdk": "0.1.2"
   }
 }

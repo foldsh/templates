@@ -9,7 +9,7 @@ RUN go mod download
 COPY . ./
 RUN GOOS=linux CGO_ENABLED=0 go build -o ./bin/app .
 
-FROM foldsh/foldrt:v0.1.2-beta.1
+FROM foldsh/foldrt:v0.1.2
 WORKDIR /fold
 COPY --from=builder /fold/bin/app ./bin/app
 EXPOSE 6123

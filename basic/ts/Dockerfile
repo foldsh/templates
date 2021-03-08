@@ -9,7 +9,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-FROM foldsh/foldrt:v0.1.2-beta.1-node
+FROM foldsh/foldrt:v0.1.2-node
 WORKDIR /fold
 COPY --from=builder /fold/node_modules ./node_modules
 COPY --from=builder /fold/dist ./dist

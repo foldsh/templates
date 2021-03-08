@@ -1,4 +1,4 @@
-FROM foldsh/foldrt:v0.1.2-beta.1-node
+FROM foldsh/foldrt:v0.1.2-node
 WORKDIR /fold
 
 # Download dependencies
